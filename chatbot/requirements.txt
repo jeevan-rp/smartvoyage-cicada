@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+geopandas
+xgboost
+scikit-learn
+google-generativeai
+python-dotenv
+shapely

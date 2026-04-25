@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "1",
+        "name": "Nandi Hills Lesser-Known Viewpoint",
+        "category": "nature",
+        "eco_friendly": true,
+        "description": "A quiet, sustainable viewpoint away from the main tourist crowd.",
+        "capacity_limit": 50,
+        "popularity_score": 0.3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.6833, 13.3702]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "2",
+        "name": "Green Path Organic State",
+        "category": "food",
+        "eco_friendly": true,
+        "description": "A fully sustainable, organic local vendor serving traditional millet dishes.",
+        "capacity_limit": 30,
+        "popularity_score": 0.4
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5753, 13.0068]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "3",
+        "name": "Turahalli Minor Forest Trail",
+        "category": "nature",
+        "eco_friendly": true,
+        "description": "A secluded forest patch ideal for quiet walks and cycling, away from city traffic.",
+        "capacity_limit": 100,
+        "popularity_score": 0.2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5255, 12.8845]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "4",
+        "name": "Artisan Pottery Cafe (Jayanagar)",
+        "category": "culture",
+        "eco_friendly": true,
+        "description": "A local artisan cafe promoting local arts and sustainable coffee.",
+        "capacity_limit": 20,
+        "popularity_score": 0.5
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.5838, 12.9299]
+      }
+    }
+  ]
+}
