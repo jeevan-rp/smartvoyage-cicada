@@ -49,7 +49,7 @@ export default function RewardsMarketplace() {
 <img alt="lush green forest canopy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="lush aerial view of a sustainable tropical rainforest canopy with soft morning mist and vibrant green foliage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCM7rATRL2eL8-c-AbmS4OQGH_LAHcGi_RpRiEBxf-QSsRXYjYjI3fgDnKbIOMmcjj-xrTPa_aTnrM_OIDnwqXprqdxxHWLh6NvDZelOJRjrTMsaSWPjiuRGq2DQKj-5WDBuxvgFAKY_LI1tY2UVOijvgIQsvSr4jPsCiuk4d3dpuP0OKJ2rB6S6F7RlYobZIO7LI8rE3ufx98j3_SeAc39pFIQ7jBWo5jAFCADG0s2tz9GKPb9SrThA5fr-dSMvqB6ZoICZF2m-U"/>
 <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/60 to-transparent"></div>
 </div>
-<div className="relative z-10 p-md h-full flex flex-col justify-center text-white max-w-md">
+<div className="relative z-10 p-md h-full flex flex-col justify-center text-white max-w-[28rem]">
 <span className="font-label-caps text-label-caps bg-token-gold text-on-tertiary-fixed px-3 py-1 rounded-full w-fit mb-base">FEATURED PARTNER</span>
 <h2 className="font-headline-md text-headline-md mb-xs">The Conscious Roastery</h2>
 <p className="font-body-md text-body-md opacity-90 mb-md">Redeem 1,500 points for a free zero-waste brewing kit and specialty coffee flight.</p>

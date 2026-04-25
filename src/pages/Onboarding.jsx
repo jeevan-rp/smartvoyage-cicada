@@ -13,7 +13,7 @@ export default function Onboarding() {
 <main className="flex-1 flex flex-col items-center justify-center px-6 pb-xl max-w-7xl mx-auto w-full">
 <div className="text-center mb-12">
 <h2 className="text-headline-md font-headline-md text-secondary mb-4">Journey with purpose</h2>
-<p className="text-body-lg font-body-lg text-outline max-w-lg mx-auto">Explore the world while minimizing your footprint and maximizing your impact.</p>
+<p className="text-body-lg font-body-lg text-outline max-w-[32rem] mx-auto">Explore the world while minimizing your footprint and maximizing your impact.</p>
 </div>
 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
 <div className="glass-card p-0 overflow-hidden flex flex-col group hover:translate-y-[-4px] transition-all duration-300">
@@ -59,7 +59,7 @@ export default function Onboarding() {
 </div>
 </div>
 </div>
-<div className="mt-16 w-full max-w-sm">
+<div className="mt-16 w-full max-w-[24rem]">
 <button className="w-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm py-4 px-8 rounded-[20px] flex items-center justify-center gap-3 hover:opacity-90 active:scale-95 transition-all shadow-lg mb-4">
                 Get Started
                 <span className="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>

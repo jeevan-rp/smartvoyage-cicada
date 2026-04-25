@@ -68,7 +68,7 @@ export default function MapDiscovery() {
 </button>
 </div>
 
-<div className="fixed bottom-24 left-1/2 -translate-x-1/2 w-full max-w-lg px-6 z-40 md:bottom-28">
+<div className="fixed bottom-24 left-1/2 -translate-x-1/2 w-full max-w-[32rem] px-6 z-40 md:bottom-28">
 <div className="glass-panel rounded-[24px] p-2 flex items-center gap-2 shadow-xl border border-white/40">
 <div className="flex-1 flex items-center px-4 gap-3">
 <span className="material-symbols-outlined text-slate-500">search</span>

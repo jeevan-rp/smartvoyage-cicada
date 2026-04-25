@@ -34,7 +34,7 @@ export default function ActiveNavigation() {
 </svg>
 </div>
 </div>
-<div className="absolute top-margin left-1/2 -translate-x-1/2 z-20 w-full max-w-md px-md pt-lg">
+<div className="absolute top-margin left-1/2 -translate-x-1/2 z-20 w-full max-w-[28rem] px-md pt-lg">
 <div className="glass-panel rounded-full px-md py-sm flex items-center justify-between shadow-lg">
 <div className="flex items-center gap-sm">
 <div className="bg-primary-container p-xs rounded-full flex items-center justify-center">
@@ -77,7 +77,7 @@ export default function ActiveNavigation() {
 </div>
 </div>
 </div>
-<div className="absolute bottom-margin left-1/2 -translate-x-1/2 z-30 w-full max-w-sm px-md pb-xl">
+<div className="absolute bottom-margin left-1/2 -translate-x-1/2 z-30 w-full max-w-[24rem] px-md pb-xl">
 <div className="bg-on-surface text-surface rounded-2xl p-md shadow-2xl flex items-center justify-between emerald-glow">
 <div className="flex items-center gap-md">
 <div className="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
