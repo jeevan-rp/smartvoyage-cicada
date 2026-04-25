@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-surface": "#171c1f",
+                    "surface-container-highest": "#dfe3e7",
+                    "secondary-fixed": "#dde1ff",
+                    "surface-bright": "#f6fafe",
+                    "on-surface-variant": "#3d4a3e",
+                    "surface-container-low": "#f0f4f8",
+                    "on-error-container": "#93000a",
+                    "tertiary": "#a43c12",
+                    "on-primary-fixed-variant": "#005228",
+                    "surface-container-high": "#e4e9ed",
+                    "primary-fixed": "#6bfe9c",
+                    "on-tertiary-container": "#7f2700",
+                    "surface-container": "#eaeef2",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#001356",
+                    "outline": "#6c7b6d",
+                    "error-container": "#ffdad6",
+                    "outline-variant": "#bbcbbb",
+                    "on-primary": "#ffffff",
+                    "background": "#f6fafe",
+                    "primary": "#006d37",
+                    "surface-tint": "#006d37",
+                    "primary-fixed-dim": "#4ae183",
+                    "on-tertiary": "#ffffff",
+                    "inverse-surface": "#2c3134",
+                    "on-tertiary-fixed": "#380c00",
+                    "on-secondary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-background": "#171c1f",
+                    "surface-variant": "#dfe3e7",
+                    "on-secondary-container": "#354487",
+                    "primary-container": "#2ecc71",
+                    "secondary-container": "#a6b5ff",
+                    "surface-dim": "#d6dade",
+                    "secondary": "#4b5a9e",
+                    "tertiary-container": "#ff9873",
+                    "on-primary-container": "#005027",
+                    "inverse-primary": "#4ae183",
+                    "tertiary-fixed": "#ffdbcf",
+                    "on-primary-fixed": "#00210c",
+                    "on-secondary-fixed-variant": "#334284",
+                    "secondary-fixed-dim": "#b9c3ff",
+                    "inverse-on-surface": "#edf1f5",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb59c",
+                    "on-tertiary-fixed-variant": "#822800",
+                    "surface": "#f6fafe"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "48px",
+                    "sm": "12px",
+                    "gutter": "24px",
+                    "base": "8px",
+                    "md": "24px",
+                    "xs": "4px",
+                    "margin": "32px",
+                    "xl": "80px"
+            },
+            "fontFamily": {
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-caps": ["Space Grotesk"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-sm": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "display-lg": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "500"}],
+                    "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .sustainability-gradient {
+            background: linear-gradient(90deg, #2ecc71 0%, #f1c40f 50%, #FF7F50 100%);
+        }
+        .hidden-gem-badge {
+            background-color: rgba(255, 127, 80, 0.15);
+            color: #FF7F50;
+            border: 1px solid rgba(255, 127, 80, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 glass-panel border-b border-white/30">
+<div class="flex justify-between items-center w-full px-6 py-3 max-w-7xl mx-auto">
+<div class="text-xl font-black text-emerald-600 dark:text-emerald-400 tracking-tight font-['Plus_Jakarta_Sans']">
+                SmartVoyage
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 font-body-md hover:bg-white/20 transition-colors px-3 py-1 rounded-lg" href="#">Map</a>
+<a class="text-emerald-600 font-bold font-body-md px-3 py-1 rounded-lg" href="#">Discovery</a>
+<a class="text-slate-600 font-body-md hover:bg-white/20 transition-colors px-3 py-1 rounded-lg" href="#">Itinerary</a>
+<a class="text-slate-600 font-body-md hover:bg-white/20 transition-colors px-3 py-1 rounded-lg" href="#">Impact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-slate-600 hover:bg-white/20 p-2 rounded-full transition-colors">notifications</button>
+<button class="material-symbols-outlined text-slate-600 hover:bg-white/20 p-2 rounded-full transition-colors">account_circle</button>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-8">
+<!-- Page Header -->
+<div class="mb-8">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-2">Discovery Hub</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Support local artisans and eco-certified vendors on your journey.</p>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Sidebar: Gemini Blurb Selection -->
+<div class="md:col-span-4 space-y-gutter order-2 md:order-1">
+<div class="glass-panel rounded-[24px] p-6 sticky top-24">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<h2 class="font-headline-sm text-headline-sm">Impact Insight</h2>
+</div>
+<div class="space-y-4">
+<div class="p-4 bg-primary/5 border border-primary/20 rounded-xl">
+<p class="font-body-md text-on-surface leading-relaxed">
+<span class="font-bold text-primary">The Green Weaver</span> utilizes 100% recycled ocean plastics. By shopping here, you offset approximately <span class="font-bold">2.4kg of carbon</span> per purchase and support marine conservation in the local bay.
+                            </p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center text-xs font-label-caps uppercase text-on-surface-variant">
+<span>Local Economic Boost</span>
+<span>94%</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 94%"></div>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-on-primary rounded-[20px] font-body-md font-bold hover:opacity-90 active:scale-95 transition-all">
+                            Visit Website
+                        </button>
+</div>
+</div>
+<!-- Hidden Gems Highlight -->
+<div class="glass-panel rounded-[24px] p-6">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary">diamond</span>
+<h3 class="font-headline-sm text-[18px]">Local Gems nearby</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 p-3 hover:bg-white/20 rounded-xl cursor-pointer transition-colors">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="close up of organic handmade pottery with earthy textures and natural glazes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7Djd19XoCjosT2S1RYaPFwCfFzO07PTB4nadLv49Op5YM2nNCy4Z7rjO8GXxEeaQz8ikuCGWd1fa_UeW3hFEoOd-G-UecWjg5Y3wasEzZqwy9Uum1AsbFwkQKaADQvSC-i-LsL2bGlUvElNdJt5Rk7_3WLsQmVnigx7o95VvOZ_UxnN6t9lsVediMUePPXfQLQeZT6hREV6h-fSlrCJ2Weh7HgBC8nmAn0OpEHi7NA5iyRQ5QqCokDvHXfSXfbmihQjnXJDnKWqE"/>
+<div>
+<p class="font-bold text-body-md">Clay &amp; Co.</p>
+<span class="hidden-gem-badge text-[10px] px-2 py-0.5 rounded-full font-label-caps">HIDDEN GEM</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 hover:bg-white/20 rounded-xl cursor-pointer transition-colors border border-primary/20 bg-white/30">
+<img class="w-12 h-12 rounded-lg object-cover" data-alt="interior of a modern eco-friendly boutique with wooden shelves and minimalist design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPmKpw6hV1Uj-M-p4XK9EXoeXXMBQvZKdwKdgC3rnILWvj-K4SpRg_9RELvU_QeCSvpflr1UMdDKmz2HpXGi16vW4DZMT81udmJGDfVi0KQdZA9IrzueUairib6nCsHPjGe8a8g3hf1RG1l3XfnRmXRDPkQgUwtzRqBAG0nLt_twt1p1SkwphS8GLL9OwLDNqar7_gYKLfssjM0si4MH8BvN6eGdbtgCj1HPej98Hw0HtuYEYCOx7WycyS5edGdymNIuHwKsnoCfY"/>
+<div>
+<p class="font-bold text-body-md">The Green Weaver</p>
+<span class="hidden-gem-badge text-[10px] px-2 py-0.5 rounded-full font-label-caps">CURRENT FOCUS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content: Vendor List -->
+<div class="md:col-span-8 space-y-6 order-1 md:order-2">
+<!-- Filters -->
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-body-md font-semibold shrink-0">All Vendors</button>
+<button class="px-5 py-2 rounded-full glass-panel text-on-surface-variant font-body-md shrink-0">Artisans</button>
+<button class="px-5 py-2 rounded-full glass-panel text-on-surface-variant font-body-md shrink-0">Zero Waste</button>
+<button class="px-5 py-2 rounded-full glass-panel text-on-surface-variant font-body-md shrink-0">Ethical Fashion</button>
+</div>
+<!-- Vendor Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Vendor Card 1 -->
+<div class="glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+<div class="relative h-48">
+<img class="w-full h-full object-cover" data-alt="sustainable clothing boutique with linen garments hanging on minimalist wooden racks in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBGRrs6p_CSZibxSB5-EWhAELk_WCJZFqTyUfVZyeaHN3uw9udUL2NshJbJOpfhslgD8W71ZS0eCV-DN_VpMZhW3SBoZM0FdySFeQIzfQ6YrO7CE1Ee-umwMaKVx71CTGytNk0iBTtGCFqCi_eHWCc9IFLZ0x7_oV9PUPxAvFP9wWquP5UjMLOtgwpjfmgFjaBmTzlqnrtMnqKu5mLlSXykgYr-Tbo3_0RGUbbEXt7fYZI0d-L2TVbvSruYKcZirXrbzAxr6oDx4o"/>
+<div class="absolute top-4 right-4 hidden-gem-badge px-3 py-1 rounded-full font-label-caps text-xs">HIDDEN GEM</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-[20px]">The Green Weaver</h3>
+<div class="flex items-center text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.9</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Pioneering circular fashion using recycled marine debris and organic hemp fibers.</p>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-label-caps text-on-surface-variant">
+<span>Sustainability Score</span>
+<span class="text-primary font-bold">98/100</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full sustainability-gradient" style="width: 98%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vendor Card 2 -->
+<div class="glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+<div class="relative h-48">
+<img class="w-full h-full object-cover" data-alt="shelves in a zero waste shop with glass jars filled with grains, seeds, and spices" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXIzj-c45yFDicp0fUc34Zt0cN6mCapi37GzqW5vOj2ogTodK_-FqV4V6_VKPqh-5FTn9cG0irM1wrMhE3k5qKY5kFYjkm7eijDIJrmUoBNQAKkgVJJJPmG2wIjqKZdsNepTN6kP9yGT1wRcOonSVI0i7FSRHBEhbiCpEwYwijA9zvs2JCldRDeCe8qqXvUPDQL5OFFbCEzWzJjHtlqqcyzz4h7ZC6a1YY-_s0_uX9Ims8GKMCk5U5S0FopL1J_p4rjBeyAK8ccfA"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-[20px]">Eco-Refill Station</h3>
+<div class="flex items-center text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.7</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Community focused zero-waste pantry specializing in local volcanic soil produce.</p>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-label-caps text-on-surface-variant">
+<span>Sustainability Score</span>
+<span class="text-primary font-bold">82/100</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full sustainability-gradient" style="width: 82%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vendor Card 3 -->
+<div class="glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.02] transition-transform duration-300">
+<div class="relative h-48">
+<img class="w-full h-full object-cover" data-alt="natural organic soap bars stacked on a rustic wooden tray with lavender sprigs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIIiGUxFt24v8WEKf_T9Jl_78Vm7F1D20vy1_atEhAHpgaUh3_XVBBU3vQTci5bn0hu-REs4tfg5dtDfd0BL5S2M4anRdRDHtTs9yaTSLRLfzo-szyGhWk4ZkI0wxLINq0Vaga1P5OtaHfUL9c7eqshgvelgAvuLYVH8_ywb4py7fvb1lo74lOSftGRvQ8ZcQY9zUhsdUMSQgKBngxZ2ZjcAhgTmApfOZmcJQXc_QB_FxibJy7XAR6pPGgBac6X2DabyeXZeuLMNY"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-[20px]">Botanical Alchemy</h3>
+<div class="flex items-center text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>4.8</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Small-batch skincare made from wild-foraged botanicals and heritage oils.</p>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-label-caps text-on-surface-variant">
+<span>Sustainability Score</span>
+<span class="text-primary font-bold">91/100</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full sustainability-gradient" style="width: 91%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Vendor Card 4 -->
+<div class="glass-panel rounded-[24px] overflow-hidden group hover:scale-[1.02] transition-transform duration-300 border-tertiary/20">
+<div class="relative h-48">
+<img class="w-full h-full object-cover" data-alt="detailed macro shot of handcrafted ceramic bowls with organic speckled patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfVhuuKFxXGon4Jxut8DouLh2cPXwFz21FjV5m2LMfKyKSvvqkWgTku3TkLMEl57G__hKWTfvqyi3IxDr8LWRU_NFiuBM8aJzAA2IZHDHmFeBecUk4LN-CkBZNr10MfY-i3_u_7k8lS6kplqEhIwY6jFoUOht97wW82RhT-jT3OVx7vd-1P2tGbyqUAESLQ3abvELfYqjmaas9S2BRrNaAearvf9DyTuMUSZI1QkrNQ7CYUB96E_46NvuBl2OAQpPbBk0dTJu4fRI"/>
+<div class="absolute top-4 right-4 hidden-gem-badge px-3 py-1 rounded-full font-label-caps text-xs">HIDDEN GEM</div>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-[20px]">Clay &amp; Co.</h3>
+<div class="flex items-center text-primary font-bold">
+<span class="material-symbols-outlined text-[18px] mr-1" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5.0</span>
+</div>
+</div>
+<p class="text-on-surface-variant text-body-md mb-4 line-clamp-2">Traditional pottery using lead-free local clay and solar-powered kilns.</p>
+<div class="space-y-2">
+<div class="flex justify-between text-xs font-label-caps text-on-surface-variant">
+<span>Sustainability Score</span>
+<span class="text-primary font-bold">88/100</span>
+</div>
+<div class="h-2 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full sustainability-gradient" style="width: 88%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 glass-panel md:hidden rounded-t-[24px] shadow-lg">
+<div class="flex justify-around items-center px-4 pb-4 pt-2">
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:bg-emerald-500/10 transition-all">
+<span class="material-symbols-outlined">map</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Map</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-emerald-500/20 text-emerald-600 rounded-2xl px-4 py-1.5 transition-all">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">explore</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Discovery</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:bg-emerald-500/10 transition-all">
+<span class="material-symbols-outlined">event_note</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Itinerary</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-500 px-4 py-1.5 hover:bg-emerald-500/10 transition-all">
+<span class="material-symbols-outlined">eco</span>
+<span class="font-['Plus_Jakarta_Sans'] text-[12px] font-semibold">Impact</span>
+</div>
+</div>
+</nav>
+<!-- Contextual FAB -->
+<button class="fixed right-6 bottom-24 md:bottom-12 z-40 w-14 h-14 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center shadow-xl hover:scale-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">add_location_alt</span>
+</button>
+</body></html>

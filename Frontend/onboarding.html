@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Welcome to SmartVoyage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#4ae183",
+                        "surface-container-low": "#f0f4f8",
+                        "surface-variant": "#dfe3e7",
+                        "on-tertiary-fixed": "#380c00",
+                        "secondary": "#4b5a9e",
+                        "surface-container-highest": "#dfe3e7",
+                        "primary": "#006d37",
+                        "tertiary-fixed-dim": "#ffb59c",
+                        "outline-variant": "#bbcbbb",
+                        "on-primary-container": "#005027",
+                        "secondary-container": "#a6b5ff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#334284",
+                        "on-primary-fixed": "#00210c",
+                        "on-secondary-container": "#354487",
+                        "on-tertiary-container": "#7f2700",
+                        "surface-container": "#eaeef2",
+                        "inverse-surface": "#2c3134",
+                        "on-primary-fixed-variant": "#005228",
+                        "on-background": "#171c1f",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed": "#dde1ff",
+                        "surface-container-high": "#e4e9ed",
+                        "on-secondary": "#ffffff",
+                        "on-surface-variant": "#3d4a3e",
+                        "primary-container": "#2ecc71",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#001356",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#ff9873",
+                        "on-tertiary-fixed-variant": "#822800",
+                        "surface-tint": "#006d37",
+                        "background": "#f6fafe",
+                        "surface-dim": "#d6dade",
+                        "surface-bright": "#f6fafe",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#edf1f5",
+                        "azure-deep": "#1A2A6C"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "sm": "12px",
+                        "xl": "32px",
+                        "lg": "24px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "md": "16px",
+                        "base": "8px",
+                        "margin": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Space Grotesk"],
+                        "body-lg": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "title-lg": ["Manrope"],
+                        "label-sm": ["Manrope"],
+                        "label-lg": ["Manrope"],
+                        "headline-md": ["Space Grotesk"],
+                        "display-lg": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-sm": ["11px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "500"}],
+                        "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.35);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-black font-body-md text-on-background min-h-screen flex flex-col overflow-x-hidden relative">
+<!-- Background Image with Overlay -->
+<div class="fixed inset-0 z-0">
+<img alt="Sustainable eco-city" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgomb-XnZJz9VTC5We1QzuITYPidk83OPZS2z5uQCDKHbBGfg4NG-CdbEBIsZIx9zcMyrvZw2_BFkKaZNA0RvrSrU0YV0eBOf4Z1-6_EwiYWOhR2nstDi41xbMsD_AYDfLG-DBYGHTfCv653WOI9wEkZQHuS-jH57PO1HAR7HV0b6yerFhQwVRwinzT-ud8gzSx_whs5lFJkqKrS9IJ29PoesC1OJDxK4gNT7ISHGW8E5ssDAeUGVPUD1mUBCy-UxhoDNI6BGFuXCA"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/20 to-black/80"></div>
+</div>
+<!-- Top Branding Shell -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-center px-6 py-8">
+<div class="flex flex-col items-center">
+<h1 class="text-2xl font-['Space_Grotesk'] font-bold tracking-tighter text-white">SmartVoyage</h1>
+<div class="h-1 w-8 bg-primary-container rounded-full mt-1"></div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col justify-center items-center pt-24 pb-48 relative z-10">
+<!-- Swipeable Value Prop Cards Container -->
+<div class="w-full overflow-x-auto hide-scrollbar snap-x snap-mandatory flex px-gutter gap-lg">
+<!-- Prop Card 1: Precision Eco-Routing -->
+<div class="snap-center shrink-0 w-[calc(100vw-48px)] max-w-sm glass-card rounded-[32px] p-lg flex flex-col items-center text-center shadow-2xl">
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-lg relative">
+<img alt="Eco routing" class="w-full h-full object-cover" data-alt="Modern digital map interface with glowing green navigation path through a lush sustainable city at sunrise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4KuY09sWuYM3usvpM9lqNztp4dzG-xRc2fqkBn5XnKH5xydmzOm0EKACXf7XmT1YE5pBDzZrOnEE-HfAD-5Qiqq2ZiL_jiOvLsfyv8HLBrW_-Gze0fNqhW71LLimF4FZBx9yLtGattVbZmNDu2ZYsyh5mFlDzVB5ql7YvUuv4M8uZSoweMi2LPNJZaG07xD90InDfqChcTTr0jIB60FMRNdfAO5CQlpwjYpSxFP7m0bhLUcf1eV02FuE4Io5Sxvx7KKxj31On0Rc4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">eco</span>
+<span class="text-white font-headline-md text-label-lg">Smart Route</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-sm">Precision Routing</h2>
+<p class="font-body-md text-body-md text-white/90 max-w-[280px]">
+                Optimized paths that reduce your carbon footprint while ensuring maximum travel efficiency.
+            </p>
+</div>
+<!-- Prop Card 2: Real-time Eco-Stats -->
+<div class="snap-center shrink-0 w-[calc(100vw-48px)] max-w-sm glass-card rounded-[32px] p-lg flex flex-col items-center text-center shadow-2xl">
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-lg relative">
+<img alt="Analytics" class="w-full h-full object-cover" data-alt="Futuristic glass dashboard showing vibrant green energy data visualizations and floating eco-statistics in a clean laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNw9qGe0a__8W2U1ufW77tPwX7jWzWHxes2TNDxq3d7NQ1Gsrhs-U3__LOr_J0GuV9rykwQQvN8Xo3KLfigrxbJI2gAlUCozCVM9zaZIr-P7iNvxtfyDNXaW4jZ71O7R_nMl2Y3hS-G5VKiI1HlmSJ0v6zwfCIftOuf-5Ougp-c2d2inWc7fXZY2hUrCPzReXy94jZcEvtg99xf0jSMNEaf1_x9lVXMaSg8Ftgi1b8QpETTYscf5v5lmkJnEediWrRKvAfiJriv28o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="text-white font-headline-md text-label-lg">Live Metrics</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-sm">Impact Visuals</h2>
+<p class="font-body-md text-body-md text-white/90 max-w-[280px]">
+                Track your environmental contribution with data-driven transparency and beautiful analytics.
+            </p>
+</div>
+<!-- Prop Card 3: Community Rewards -->
+<div class="snap-center shrink-0 w-[calc(100vw-48px)] max-w-sm glass-card rounded-[32px] p-lg flex flex-col items-center text-center shadow-2xl">
+<div class="w-full aspect-[4/3] rounded-2xl overflow-hidden mb-lg relative">
+<img alt="Community" class="w-full h-full object-cover" data-alt="Diverse group of young professionals smiling and collaborating in a modern sun-drenched sustainable outdoor workspace" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDubAeWH1fLbacZBxTEAQ6AqOJz7nWVxea6MRu81TJc1CLO6OYgBIQ_WaTfwoh3ufFpDW0kxXK18S-Agxp-4U4xi4gdEwMDWwdpYu1YfEGH7Tl4QDbOk263HOlK3Lpd2CutQ9lupwQLwyBePQItPrqVeDzaReeq_YBGgxln4ueirdT3pcR9USxA2W1ck5WNSY3sg5htFVRYxEH_Y0uN34F27ogD3IZ4asvo5rmgVBUTge4WtFzgQko6v_NWLjf-N6YP__sVeIRlW8DO"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-4 left-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span class="text-white font-headline-md text-label-lg">Eco Network</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-white mb-sm">Global Network</h2>
+<p class="font-body-md text-body-md text-white/90 max-w-[280px]">
+                Join a community of conscious travelers and earn rewards for sustainable choices.
+            </p>
+</div>
+</div>
+<!-- Pagination Indicators -->
+<div class="flex gap-2 mt-lg">
+<div class="w-8 h-1.5 rounded-full bg-primary-container"></div>
+<div class="w-2 h-1.5 rounded-full bg-white/30"></div>
+<div class="w-2 h-1.5 rounded-full bg-white/30"></div>
+</div>
+</main>
+<!-- Bottom Actions Shell -->
+<footer class="fixed bottom-0 left-0 w-full z-50 p-margin pb-10 flex flex-col gap-md bg-gradient-to-t from-black/90 via-black/40 to-transparent">
+<!-- Primary Action Button: Enlarged & Prominent -->
+<button class="w-full h-16 bg-azure-deep text-white rounded-2xl flex items-center justify-center gap-4 active:scale-[0.98] transition-all shadow-2xl hover:brightness-125 border border-white/10">
+<svg class="w-6 h-6" viewbox="0 0 24 24">
+<path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="currentColor"></path>
+<path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="currentColor"></path>
+<path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="currentColor"></path>
+<path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="currentColor"></path>
+</svg>
+<span class="font-bold text-lg tracking-widest uppercase">Sign in with Google</span>
+</button>
+<!-- Secondary Actions -->
+<div class="flex items-center justify-center">
+<button class="font-label-lg text-white/70 hover:text-white transition-colors py-2 px-4">
+            Skip for now
+        </button>
+</div>
+<!-- Privacy/Terms -->
+<p class="text-center font-label-sm text-white/50">
+        By continuing, you agree to our Terms and Privacy Policy
+    </p>
+</footer>
+</body></html>
