@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SmartVoyage - Welcome</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Space Grotesk & Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary-fixed-dim": "#4ae183",
+                    "surface-container-low": "#f0f4f8",
+                    "surface-variant": "#dfe3e7",
+                    "on-tertiary-fixed": "#380c00",
+                    "secondary": "#4b5a9e",
+                    "surface-container-highest": "#dfe3e7",
+                    "primary": "#006d37",
+                    "tertiary-fixed-dim": "#ffb59c",
+                    "outline-variant": "#bbcbbb",
+                    "on-primary-container": "#005027",
+                    "secondary-container": "#a6b5ff",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#334284",
+                    "on-primary-fixed": "#00210c",
+                    "on-secondary-container": "#354487",
+                    "on-tertiary-container": "#7f2700",
+                    "surface-container": "#eaeef2",
+                    "inverse-surface": "#2c3134",
+                    "on-primary-fixed-variant": "#005228",
+                    "on-background": "#171c1f",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-fixed": "#dde1ff",
+                    "surface-container-high": "#e4e9ed",
+                    "on-secondary": "#ffffff",
+                    "on-surface-variant": "#3d4a3e",
+                    "primary-container": "#2ecc71",
+                    "error": "#ba1a1a",
+                    "on-secondary-fixed": "#001356",
+                    "on-error-container": "#93000a",
+                    "tertiary-container": "#ff9873",
+                    "on-tertiary-fixed-variant": "#822800",
+                    "surface-tint": "#006d37",
+                    "background": "#f6fafe",
+                    "surface-dim": "#d6dade",
+                    "surface-bright": "#f6fafe",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#edf1f5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "12px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "base": "8px",
+                    "margin": "24px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Space Grotesk"],
+                    "body-lg": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "title-lg": ["Manrope"],
+                    "label-sm": ["Manrope"],
+                    "label-lg": ["Manrope"],
+                    "headline-md": ["Space Grotesk"],
+                    "display-lg": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0.5px", "fontWeight": "400"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "title-lg": ["22px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-sm": ["11px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "500"}],
+                    "headline-md": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "display-lg": ["57px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-glow {
+            box-shadow: 0 8px 32px 0 rgba(0, 109, 55, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .bg-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 109, 55, 0.03) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .mask-gradient {
+            mask-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface-container-low font-body-md text-on-surface antialiased overflow-hidden">
+<!-- Splash Screen Container -->
+<main class="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+<!-- High Quality Background Image -->
+<div class="absolute inset-0 z-0">
+<img alt="Beautiful green sustainable city with lush vertical gardens and eco-friendly infrastructure" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrWXhQryjK1PC8hOiqK-WQMC39E-NwXAs-KWjxkA4_YYyep33anpgjIUi7qJwpds8akc38xqBVmHeo79HJ_sUYRBKIl4QxoMz1fNcu2n4fmo4MTLJ1SE37XshUq9Re96VgojUZe5TQjdhmlwTrIfN1Rogmw9RHBOKjV3M9CD9NSDtdS91hFSrMEOrxZID60u_MiNjgONSDEwCWOMCuhDtQQ-jlOGPc0x1aXZgjv1itAjMlJe0oZOrxbduvYEFRSrv9GKMpAsrGrN2i"/>
+<!-- Subtle Overlay for Readability -->
+<div class="absolute inset-0 bg-gradient-to-br from-black/40 via-transparent to-black/20 backdrop-blur-[2px]"></div>
+</div>
+<!-- Central Glassmorphic Card (Significantly Larger) -->
+<div class="relative z-10 w-full max-w-lg mx-gutter">
+<div class="backdrop-blur-2xl bg-white/70 rounded-[3rem] p-16 glass-glow flex flex-col items-center text-center transition-all duration-700 transform scale-105">
+<!-- Logo Animation Area -->
+<div class="relative mb-xl w-32 h-32 flex items-center justify-center"><img alt="SmartVoyage Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ug1DdcTT6VLQa9su1_aI6AVhXkkQI9O2-1CLn2ksFka5t9j-DZXnoAz92QmgXozseH0R4vSNWtvcKM6waj3cqQntoLjctqLGVKQfZaKOdxOkGmh9NkKQCNCWVeaMvAvMVDv216cp7JqGsX7-QArOUcTpECjPEZjFArYY4K-1kBu4C5-JOkHVObPMVacRsvT417zGMqe81Go7bV20TzGJEwUdRXP7mx-bZkEVFa44hH3wFaw_DqZLg8uYay8zmHYu4j4XXSKhagPQkA"/></div>
+<!-- Brand Name -->
+<h1 class="font-headline-lg text-[44px] leading-tight text-primary tracking-tighter mb-sm">
+                    SmartVoyage
+                </h1>
+<!-- Tagline -->
+<p class="font-body-lg text-lg text-on-surface-variant max-w-xs mb-xl">
+                    Sustainable travel intelligence for the modern explorer.
+                </p>
+<!-- Loading State / Progress Indicator -->
+<div class="w-full max-w-[280px]">
+<div class="w-full bg-surface-container-highest/50 h-1.5 rounded-full overflow-hidden mb-md">
+<div class="bg-primary h-full w-2/3 rounded-full transition-all duration-1000 ease-in-out"></div>
+</div>
+<span class="font-label-lg text-label-lg uppercase tracking-[0.2em] text-primary/70 font-semibold">
+                        Calibrating Routes
+                    </span>
+</div>
+</div>
+<!-- Footer Aesthetic Detail -->
+<div class="mt-xl flex justify-center gap-base">
+<div class="w-2.5 h-2.5 rounded-full bg-white shadow-sm"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-white/50 shadow-sm"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-white/20 shadow-sm"></div>
+</div>
+</div>
+</main>
+<!-- Content Hidden as per Splash Screen Transactional Suppression Rules -->
+</body></html>
