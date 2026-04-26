@@ -146,7 +146,7 @@ Return ONLY a valid JSON object (no markdown, no extra text) using this exact sc
 }
 Generate exactly ${days} objects in the itinerary array. Use friendly, adventurous language — not robotic.`;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
         const result = await model.generateContent(prompt);
         const raw = result.response.text();
 
@@ -209,7 +209,7 @@ app.post('/api/hidden-gem-alert', async (req, res) => {
         I am suggesting they visit a nearby hidden gem instead: ${alternativeGem}.
         Write a short, persuasive "Why it's worth it" paragraph (max 3 sentences) explaining why ${alternativeGem} is a better, peaceful alternative right now.`;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
         const result = await model.generateContent(prompt);
         res.json({ success: true, reason: result.response.text() });
     } catch (error) {
