@@ -30,7 +30,7 @@ const CommunityConnect = () => {
 
   useEffect(() => {
     // Fetch guides from our updated backend
-    fetch('http://localhost:5000/api/guides')
+    fetch('https://api-smartvoyage.vercel.app/api/guides')
       .then(res => res.json())
       .then(data => {
         if (data.success && data.guides.length > 0) {
@@ -43,7 +43,7 @@ const CommunityConnect = () => {
       })
       .catch(err => console.error("Error fetching guides:", err));
 
-    const newSocket = io('http://localhost:5000');
+    const newSocket = io('https://api-smartvoyage.vercel.app');
     setSocket(newSocket);
 
     newSocket.on('receive_message', (msg) => {

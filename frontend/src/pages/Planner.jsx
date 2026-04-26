@@ -88,7 +88,7 @@ const Planner = () => {
     if (!form.destination.trim()) { setError('Please enter a destination 📍'); return; }
     setLoading(true); setError(''); setResult(null); setSaved(false); setTokensEarned(false);
     try {
-      const res = await axios.post('http://localhost:5000/api/plan-trip', form);
+      const res = await axios.post('https://api-smartvoyage.vercel.app/api/plan-trip', form);
       if (res.data?.success) {
         setResult({ ...res.data.data, localDataUsed: res.data.localDataUsed });
         setActiveTab(0);

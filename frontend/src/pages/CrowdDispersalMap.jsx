@@ -61,7 +61,7 @@ const CrowdDispersalMap = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/hidden-gem-alert', {
+      const response = await axios.post('https://api-smartvoyage.vercel.app/api/hidden-gem-alert', {
         busyLocation: landmark.name,
         alternativeGem: landmark.gem
       });
