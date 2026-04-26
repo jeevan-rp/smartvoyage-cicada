@@ -129,26 +129,26 @@ const Planner = () => {
       </div>
 
       {/* ── Form ── */}
-      <motion.div className="glass-panel p-8 rounded-3xl mb-8">
-        <form onSubmit={handlePlan} className="space-y-6">
+      <motion.div className="glass-panel p-10 rounded-3xl mb-12">
+        <form onSubmit={handlePlan} className="space-y-10">
 
           {/* Origin / Destination */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div>
-              <label className="block text-sm font-bold text-gray-600 mb-2">Starting Point (optional)</label>
+              <label className="block text-sm font-bold text-gray-600 mb-3">Starting Point (optional)</label>
               <input className="form-input w-full" placeholder="e.g. Majestic, Koramangala…"
                 value={form.origin} onChange={e => set('origin', e.target.value)} />
             </div>
             <div>
-              <label className="block text-sm font-bold text-gray-600 mb-2">Destination ✳️</label>
+              <label className="block text-sm font-bold text-gray-600 mb-3">Destination ✳️</label>
               <input className="form-input w-full" placeholder="e.g. Lalbagh, Nandi Hills…"
                 value={form.destination} onChange={e => set('destination', e.target.value)} required />
             </div>
           </div>
 
           {/* Days */}
-          <div>
-            <label className="block text-sm font-bold text-gray-600 mb-2">
+          <div className="pt-2">
+            <label className="block text-sm font-bold text-gray-600 mb-4">
               <CalendarDays size={14} className="inline mr-1" /> Number of Days: <strong>{form.days}</strong>
             </label>
             <input type="range" min={1} max={7} value={form.days} onChange={e => set('days', +e.target.value)}
@@ -160,16 +160,16 @@ const Planner = () => {
 
           {/* Travel Style */}
           <div>
-            <label className="block text-sm font-bold text-gray-600 mb-2">Travel Style</label>
-            <div className="flex flex-wrap gap-2">
+            <label className="block text-sm font-bold text-gray-600 mb-3">Travel Style</label>
+            <div className="flex flex-wrap gap-4">
               {STYLES.map(s => <Pill key={s.v} active={form.travelStyle === s.v} onClick={() => set('travelStyle', s.v)}>{s.label}</Pill>)}
             </div>
           </div>
 
           {/* Traveler Type */}
           <div>
-            <label className="block text-sm font-bold text-gray-600 mb-2">Travelling As</label>
-            <div className="flex flex-wrap gap-2">
+            <label className="block text-sm font-bold text-gray-600 mb-3">Travelling As</label>
+            <div className="flex flex-wrap gap-4">
               {TRAVELERS.map(t => (
                 <Pill key={t.v} active={form.travelerType === t.v} onClick={() => set('travelerType', t.v)}>
                   {t.icon} {t.label}
@@ -180,13 +180,13 @@ const Planner = () => {
 
           {/* Transport */}
           <div>
-            <label className="block text-sm font-bold text-gray-600 mb-2">Preferred Transport</label>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <label className="block text-sm font-bold text-gray-600 mb-3">Preferred Transport</label>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {TRANSPORTS.map(({ v, label, Icon }) => (
                 <button key={v} type="button" onClick={() => set('transport', v)}
                   className={`flex flex-col items-center gap-1 p-3 rounded-2xl border-2 transition-all text-sm font-bold ${
                     form.transport === v ? 'border-brand-green bg-green-50 text-brand-green' : 'border-gray-200 text-gray-500 hover:border-green-200'}`}>
-                  <Icon size={20} /> {label}
+                  <Icon size={24} className="mb-1" /> {label}
                 </button>
               ))}
             </div>
