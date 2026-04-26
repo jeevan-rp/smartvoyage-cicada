@@ -83,7 +83,7 @@ app.post('/api/predict-trip', async (req, res) => {
             "hiddenGem": "Name and brief description of a hidden gem"
         }`;
 
-        const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+        const model = genAI.getGenerativeModel({ model: 'gemini-flash-latest' });
         const result = await model.generateContent(prompt);
         const responseText = result.response.text();
 
