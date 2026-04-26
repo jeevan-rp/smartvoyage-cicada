@@ -130,7 +130,7 @@ const Planner = () => {
 
       {/* ── Form ── */}
       <motion.div className="glass-panel p-10 rounded-3xl mb-12">
-        <form onSubmit={handlePlan} className="space-y-10">
+        <form onSubmit={handlePlan} className="flex flex-col gap-8">
 
           {/* Origin / Destination */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
